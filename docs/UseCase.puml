@@ -1,0 +1,52 @@
+@startuml Accounting-of-events Use Case 
+
+left to right direction
+
+actor "Student" as Student
+actor "Admin" as Admin
+actor "Organizer" as Organizer
+
+package "System" {
+  usecase "Регистрация" as UC_Reg
+  usecase "Вход в систему" as UC_Login
+  
+  usecase "Посмотреть список мероприятий" as UC_ViewEvents
+  usecase "Отмена записи" as UC_CancelReg
+  usecase "Узнать кто организатор мероприятия" as UC_GetOrg
+  usecase "Узнать дату и время проведения" as UC_GetDT
+  usecase "Запись на мероприятие" as UC_Enroll
+  usecase "Зарегистрировать организатора" as UC_RegOrg
+  usecase "Выбрать мероприятие" as UC_SelectEvent
+  usecase "Изменить дату и время" as UC_ChangeDT
+  usecase "Назначить организатора" as UC_AssignOrg
+  usecase "Отмена записи участника" as UC_CancelPart
+  usecase "Добавить мероприятие" as UC_AddEvent
+  usecase "Назначить дату и время" as UC_SetDT
+  usecase "Посмотреть список участников" as UC_ViewParts
+  usecase "Отметить посещаемость" as UC_MarkAtt
+}
+
+Student --> UC_Reg
+Student --> UC_Login
+Student --> UC_ViewEvents
+Student --> UC_CancelReg
+Student --> UC_GetOrg
+UC_GetOrg ..> UC_GetDT : include
+UC_GetOrg ..> UC_Enroll : include
+
+Admin --> UC_RegOrg
+Admin --> UC_Login
+Admin --> UC_ViewEvents
+Admin --> UC_SelectEvent
+UC_SelectEvent ..> UC_ChangeDT : include
+UC_SelectEvent ..> UC_AssignOrg : include
+
+Admin <|-- Organizer
+
+Organizer --> UC_Login
+Organizer --> UC_CancelPart
+Organizer --> UC_AddEvent
+Organizer --> UC_ViewParts
+Organizer --> UC_MarkAtt
+UC_AddEvent ..> UC_SetDT : include
+@enduml
