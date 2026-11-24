@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/annenkov/Рабочий стол/accounting-of-events"
+CMAKE_SOURCE_DIR = /home/annenkov/Projects/accounting-of-events
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/annenkov/Рабочий стол/accounting-of-events/build"
+CMAKE_BINARY_DIR = /home/annenkov/Projects/accounting-of-events/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/annenkov/Рабочий стол/accounting-of-events/build/CMakeFiles" "/home/annenkov/Рабочий стол/accounting-of-events/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/annenkov/Projects/accounting-of-events/build/CMakeFiles /home/annenkov/Projects/accounting-of-events/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/annenkov/Рабочий стол/accounting-of-events/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/annenkov/Projects/accounting-of-events/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -152,6 +152,30 @@ src/accounting-of-events/database/Database.s: src/accounting-of-events/database/
 src/accounting-of-events/database/Database.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AccountingOfEvents.dir/build.make CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.s
 .PHONY : src/accounting-of-events/database/Database.cpp.s
+
+src/accounting-of-events/exporters/DataExporter.o: src/accounting-of-events/exporters/DataExporter.cpp.o
+.PHONY : src/accounting-of-events/exporters/DataExporter.o
+
+# target to build an object file
+src/accounting-of-events/exporters/DataExporter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AccountingOfEvents.dir/build.make CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.o
+.PHONY : src/accounting-of-events/exporters/DataExporter.cpp.o
+
+src/accounting-of-events/exporters/DataExporter.i: src/accounting-of-events/exporters/DataExporter.cpp.i
+.PHONY : src/accounting-of-events/exporters/DataExporter.i
+
+# target to preprocess a source file
+src/accounting-of-events/exporters/DataExporter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AccountingOfEvents.dir/build.make CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.i
+.PHONY : src/accounting-of-events/exporters/DataExporter.cpp.i
+
+src/accounting-of-events/exporters/DataExporter.s: src/accounting-of-events/exporters/DataExporter.cpp.s
+.PHONY : src/accounting-of-events/exporters/DataExporter.s
+
+# target to generate assembly for a file
+src/accounting-of-events/exporters/DataExporter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AccountingOfEvents.dir/build.make CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.s
+.PHONY : src/accounting-of-events/exporters/DataExporter.cpp.s
 
 src/accounting-of-events/main.o: src/accounting-of-events/main.cpp.o
 .PHONY : src/accounting-of-events/main.o
@@ -381,6 +405,9 @@ help:
 	@echo "... src/accounting-of-events/database/Database.o"
 	@echo "... src/accounting-of-events/database/Database.i"
 	@echo "... src/accounting-of-events/database/Database.s"
+	@echo "... src/accounting-of-events/exporters/DataExporter.o"
+	@echo "... src/accounting-of-events/exporters/DataExporter.i"
+	@echo "... src/accounting-of-events/exporters/DataExporter.s"
 	@echo "... src/accounting-of-events/main.o"
 	@echo "... src/accounting-of-events/main.i"
 	@echo "... src/accounting-of-events/main.s"

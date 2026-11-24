@@ -1,9 +1,9 @@
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.o: \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/services/AuthenticationService.cpp \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/services/AuthenticationService.cpp \
  /usr/include/stdc-predef.h \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/services/AuthenticationService.h \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/repositories/UserRepository.h \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/database/Database.h \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/services/AuthenticationService.h \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/UserRepository.h \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/database/Database.h \
  /usr/include/sqlite3.h \
  /usr/lib/gcc/x86_64-redhat-linux/16/include/stdarg.h \
  /usr/include/c++/16/string /usr/include/c++/16/bits/requires_hosted.h \
@@ -104,7 +104,7 @@ CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/Authenticati
  /usr/include/c++/16/bits/cxxabi_init_exception.h \
  /usr/include/c++/16/typeinfo /usr/include/c++/16/bits/nested_exception.h \
  /usr/include/c++/16/bits/stdexcept_except.h \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/models/User.h \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/models/User.h \
  /usr/include/c++/16/optional \
  /usr/include/c++/16/bits/enable_special_members.h \
  /usr/include/c++/16/vector /usr/include/c++/16/bits/stl_uninitialized.h \

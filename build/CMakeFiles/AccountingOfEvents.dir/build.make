@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/annenkov/Рабочий стол/accounting-of-events"
+CMAKE_SOURCE_DIR = /home/annenkov/Projects/accounting-of-events
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/annenkov/Рабочий стол/accounting-of-events/build"
+CMAKE_BINARY_DIR = /home/annenkov/Projects/accounting-of-events/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/AccountingOfEvents.dir/depend.make
@@ -73,144 +73,158 @@ CMakeFiles/AccountingOfEvents.dir/codegen:
 .PHONY : CMakeFiles/AccountingOfEvents.dir/codegen
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.o: CMakeFiles/AccountingOfEvents.dir/flags.make
-CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.o: /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/main.cpp
+CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.o: /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/main.cpp
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.o: CMakeFiles/AccountingOfEvents.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/annenkov/Рабочий стол/accounting-of-events/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.o -c "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/annenkov/Projects/accounting-of-events/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.o -c /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/main.cpp
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/main.cpp" > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/main.cpp > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.i
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/main.cpp" -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/main.cpp -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.s
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.o: CMakeFiles/AccountingOfEvents.dir/flags.make
-CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.o: /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/database/Database.cpp
+CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.o: /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/database/Database.cpp
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.o: CMakeFiles/AccountingOfEvents.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/annenkov/Рабочий стол/accounting-of-events/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.o -c "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/database/Database.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/annenkov/Projects/accounting-of-events/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.o -c /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/database/Database.cpp
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/database/Database.cpp" > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/database/Database.cpp > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.i
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/database/Database.cpp" -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/database/Database.cpp -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.s
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/UserRepository.cpp.o: CMakeFiles/AccountingOfEvents.dir/flags.make
-CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/UserRepository.cpp.o: /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/repositories/UserRepository.cpp
+CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/UserRepository.cpp.o: /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/UserRepository.cpp
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/UserRepository.cpp.o: CMakeFiles/AccountingOfEvents.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/annenkov/Рабочий стол/accounting-of-events/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/UserRepository.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/UserRepository.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/UserRepository.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/UserRepository.cpp.o -c "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/repositories/UserRepository.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/annenkov/Projects/accounting-of-events/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/UserRepository.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/UserRepository.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/UserRepository.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/UserRepository.cpp.o -c /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/UserRepository.cpp
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/UserRepository.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/UserRepository.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/repositories/UserRepository.cpp" > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/UserRepository.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/UserRepository.cpp > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/UserRepository.cpp.i
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/UserRepository.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/UserRepository.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/repositories/UserRepository.cpp" -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/UserRepository.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/UserRepository.cpp -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/UserRepository.cpp.s
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.o: CMakeFiles/AccountingOfEvents.dir/flags.make
-CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.o: /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/repositories/EventRepository.cpp
+CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.o: /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/EventRepository.cpp
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.o: CMakeFiles/AccountingOfEvents.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/annenkov/Рабочий стол/accounting-of-events/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.o -c "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/repositories/EventRepository.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/annenkov/Projects/accounting-of-events/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.o -c /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/EventRepository.cpp
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/repositories/EventRepository.cpp" > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/EventRepository.cpp > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.i
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/repositories/EventRepository.cpp" -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/EventRepository.cpp -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.s
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventTypeRepository.cpp.o: CMakeFiles/AccountingOfEvents.dir/flags.make
-CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventTypeRepository.cpp.o: /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/repositories/EventTypeRepository.cpp
+CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventTypeRepository.cpp.o: /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/EventTypeRepository.cpp
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventTypeRepository.cpp.o: CMakeFiles/AccountingOfEvents.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/annenkov/Рабочий стол/accounting-of-events/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventTypeRepository.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventTypeRepository.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventTypeRepository.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventTypeRepository.cpp.o -c "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/repositories/EventTypeRepository.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/annenkov/Projects/accounting-of-events/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventTypeRepository.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventTypeRepository.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventTypeRepository.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventTypeRepository.cpp.o -c /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/EventTypeRepository.cpp
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventTypeRepository.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventTypeRepository.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/repositories/EventTypeRepository.cpp" > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventTypeRepository.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/EventTypeRepository.cpp > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventTypeRepository.cpp.i
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventTypeRepository.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventTypeRepository.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/repositories/EventTypeRepository.cpp" -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventTypeRepository.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/EventTypeRepository.cpp -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventTypeRepository.cpp.s
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/RegistrationRepository.cpp.o: CMakeFiles/AccountingOfEvents.dir/flags.make
-CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/RegistrationRepository.cpp.o: /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/repositories/RegistrationRepository.cpp
+CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/RegistrationRepository.cpp.o: /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/RegistrationRepository.cpp
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/RegistrationRepository.cpp.o: CMakeFiles/AccountingOfEvents.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/annenkov/Рабочий стол/accounting-of-events/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/RegistrationRepository.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/RegistrationRepository.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/RegistrationRepository.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/RegistrationRepository.cpp.o -c "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/repositories/RegistrationRepository.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/annenkov/Projects/accounting-of-events/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/RegistrationRepository.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/RegistrationRepository.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/RegistrationRepository.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/RegistrationRepository.cpp.o -c /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/RegistrationRepository.cpp
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/RegistrationRepository.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/RegistrationRepository.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/repositories/RegistrationRepository.cpp" > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/RegistrationRepository.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/RegistrationRepository.cpp > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/RegistrationRepository.cpp.i
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/RegistrationRepository.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/RegistrationRepository.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/repositories/RegistrationRepository.cpp" -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/RegistrationRepository.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/RegistrationRepository.cpp -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/RegistrationRepository.cpp.s
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.o: CMakeFiles/AccountingOfEvents.dir/flags.make
-CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.o: /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/services/RegistrationService.cpp
+CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.o: /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/services/RegistrationService.cpp
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.o: CMakeFiles/AccountingOfEvents.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/annenkov/Рабочий стол/accounting-of-events/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.o -c "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/services/RegistrationService.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/annenkov/Projects/accounting-of-events/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.o -c /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/services/RegistrationService.cpp
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/services/RegistrationService.cpp" > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/services/RegistrationService.cpp > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.i
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/services/RegistrationService.cpp" -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/services/RegistrationService.cpp -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.s
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.o: CMakeFiles/AccountingOfEvents.dir/flags.make
-CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.o: /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/services/EventService.cpp
+CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.o: /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/services/EventService.cpp
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.o: CMakeFiles/AccountingOfEvents.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/annenkov/Рабочий стол/accounting-of-events/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.o -c "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/services/EventService.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/annenkov/Projects/accounting-of-events/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.o -c /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/services/EventService.cpp
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/services/EventService.cpp" > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/services/EventService.cpp > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.i
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/services/EventService.cpp" -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/services/EventService.cpp -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.s
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.o: CMakeFiles/AccountingOfEvents.dir/flags.make
-CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.o: /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/services/AuthenticationService.cpp
+CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.o: /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/services/AuthenticationService.cpp
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.o: CMakeFiles/AccountingOfEvents.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/annenkov/Рабочий стол/accounting-of-events/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.o -c "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/services/AuthenticationService.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/annenkov/Projects/accounting-of-events/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.o -c /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/services/AuthenticationService.cpp
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/services/AuthenticationService.cpp" > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/services/AuthenticationService.cpp > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.i
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/services/AuthenticationService.cpp" -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/services/AuthenticationService.cpp -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.s
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.o: CMakeFiles/AccountingOfEvents.dir/flags.make
-CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.o: /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/ui/ConsoleUI.cpp
+CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.o: /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/ui/ConsoleUI.cpp
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.o: CMakeFiles/AccountingOfEvents.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/annenkov/Рабочий стол/accounting-of-events/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.o -c "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/ui/ConsoleUI.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/annenkov/Projects/accounting-of-events/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.o -c /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/ui/ConsoleUI.cpp
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/ui/ConsoleUI.cpp" > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/ui/ConsoleUI.cpp > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.i
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events/ui/ConsoleUI.cpp" -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/ui/ConsoleUI.cpp -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.s
+
+CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.o: CMakeFiles/AccountingOfEvents.dir/flags.make
+CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.o: /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/exporters/DataExporter.cpp
+CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.o: CMakeFiles/AccountingOfEvents.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/annenkov/Projects/accounting-of-events/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.o -MF CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.o.d -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.o -c /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/exporters/DataExporter.cpp
+
+CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/exporters/DataExporter.cpp > CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.i
+
+CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/exporters/DataExporter.cpp -o CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.s
 
 # Object files for target AccountingOfEvents
 AccountingOfEvents_OBJECTS = \
@@ -223,7 +237,8 @@ AccountingOfEvents_OBJECTS = \
 "CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/RegistrationService.cpp.o" \
 "CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.o" \
 "CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.o" \
-"CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.o"
+"CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.o" \
+"CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.o"
 
 # External object files for target AccountingOfEvents
 AccountingOfEvents_EXTERNAL_OBJECTS =
@@ -238,12 +253,13 @@ AccountingOfEvents: CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/s
 AccountingOfEvents: CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.o
 AccountingOfEvents: CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.o
 AccountingOfEvents: CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.o
+AccountingOfEvents: CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.o
 AccountingOfEvents: CMakeFiles/AccountingOfEvents.dir/build.make
 AccountingOfEvents: CMakeFiles/AccountingOfEvents.dir/compiler_depend.ts
 AccountingOfEvents: /usr/lib64/libsqlite3.so
 AccountingOfEvents: /usr/lib64/libcrypto.so
 AccountingOfEvents: CMakeFiles/AccountingOfEvents.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/annenkov/Рабочий стол/accounting-of-events/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable AccountingOfEvents"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/annenkov/Projects/accounting-of-events/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable AccountingOfEvents"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AccountingOfEvents.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -255,6 +271,6 @@ CMakeFiles/AccountingOfEvents.dir/clean:
 .PHONY : CMakeFiles/AccountingOfEvents.dir/clean
 
 CMakeFiles/AccountingOfEvents.dir/depend:
-	cd "/home/annenkov/Рабочий стол/accounting-of-events/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/annenkov/Рабочий стол/accounting-of-events" "/home/annenkov/Рабочий стол/accounting-of-events" "/home/annenkov/Рабочий стол/accounting-of-events/build" "/home/annenkov/Рабочий стол/accounting-of-events/build" "/home/annenkov/Рабочий стол/accounting-of-events/build/CMakeFiles/AccountingOfEvents.dir/DependInfo.cmake" "--color=$(COLOR)" AccountingOfEvents
+	cd /home/annenkov/Projects/accounting-of-events/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/annenkov/Projects/accounting-of-events /home/annenkov/Projects/accounting-of-events /home/annenkov/Projects/accounting-of-events/build /home/annenkov/Projects/accounting-of-events/build /home/annenkov/Projects/accounting-of-events/build/CMakeFiles/AccountingOfEvents.dir/DependInfo.cmake "--color=$(COLOR)" AccountingOfEvents
 .PHONY : CMakeFiles/AccountingOfEvents.dir/depend
 

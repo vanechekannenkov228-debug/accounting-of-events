@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+<item>
+<Description>Введение в программирование на C++</Description>
+<Event_datetime>2026-12-01 10:00</Event_datetime>
+<ID>1</ID>
+<Location>Аудитория 301</Location>
+<Max_partipants>30</Max_partipants>
+<Status>planned</Status>
+<Title>Основы C++</Title>
+<event_type>
+<id>1</id>
+<name>Лекция</name>
+</event_type>
+<organizer>
+<id>1</id>
+<login>ivan</login>
+<name>Иван Анненков</name>
+</organizer>
+</item>
+<item>
+<Description>Практическое занятие по базам данных</Description>
+<Event_datetime>2026-12-03 14:00</Event_datetime>
+<ID>2</ID>
+<Location>Компьютерный класс 204</Location>
+<Max_partipants>20</Max_partipants>
+<Status>planned</Status>
+<Title>Практика SQL</Title>
+<event_type>
+<id>2</id>
+<name>Семинар</name>
+</event_type>
+<organizer>
+<id>5</id>
+<login>elena</login>
+<name>Елена Козлова</name>
+</organizer>
+</item>
+<item>
+<Description>Командное соревнование по программированию</Description>
+<Event_datetime>2026-12-10 09:00</Event_datetime>
+<ID>3</ID>
+<Location>Главный корпус</Location>
+<Max_partipants>50</Max_partipants>
+<Status>planned</Status>
+<Title>Хакатон</Title>
+<event_type>
+<id>3</id>
+<name>Соревнование</name>
+</event_type>
+<organizer>
+<id>1</id>
+<login>ivan</login>
+<name>Иван Анненков</name>
+</organizer>
+</item>
+<item>
+<Description>Знакомство с лабораторией робототехники</Description>
+<Event_datetime>2026-12-15 12:00</Event_datetime>
+<ID>4</ID>
+<Location>Лаборатория робототехники</Location>
+<Max_partipants>15</Max_partipants>
+<Status>planned</Status>
+<Title>Экскурсия в лабораторию</Title>
+<event_type>
+<id>4</id>
+<name>Экскурсия</name>
+</event_type>
+<organizer>
+<id>5</id>
+<login>elena</login>
+<name>Елена Козлова</name>
+</organizer>
+</item>
+</events>

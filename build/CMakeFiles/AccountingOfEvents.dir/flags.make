@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/annenkov/Рабочий стол/accounting-of-events/src/accounting-of-events"
+CXX_INCLUDES = -I/home/annenkov/Projects/accounting-of-events/src/accounting-of-events
 
 CXX_FLAGS = -std=c++17
 

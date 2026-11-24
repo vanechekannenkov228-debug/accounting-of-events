@@ -1,0 +1,74 @@
+[
+  {
+    "Description": "Введение в программирование на C++",
+    "Event_datetime": "2026-12-01 10:00",
+    "ID": 1,
+    "Location": "Аудитория 301",
+    "Max_partipants": 30,
+    "Status": "planned",
+    "Title": "Основы C++",
+    "event_type": {
+      "id": 1,
+      "name": "Лекция"
+    },
+    "organizer": {
+      "id": 1,
+      "login": "ivan",
+      "name": "Иван Анненков"
+    }
+  },
+  {
+    "Description": "Практическое занятие по базам данных",
+    "Event_datetime": "2026-12-03 14:00",
+    "ID": 2,
+    "Location": "Компьютерный класс 204",
+    "Max_partipants": 20,
+    "Status": "planned",
+    "Title": "Практика SQL",
+    "event_type": {
+      "id": 2,
+      "name": "Семинар"
+    },
+    "organizer": {
+      "id": 5,
+      "login": "elena",
+      "name": "Елена Козлова"
+    }
+  },
+  {
+    "Description": "Командное соревнование по программированию",
+    "Event_datetime": "2026-12-10 09:00",
+    "ID": 3,
+    "Location": "Главный корпус",
+    "Max_partipants": 50,
+    "Status": "planned",
+    "Title": "Хакатон",
+    "event_type": {
+      "id": 3,
+      "name": "Соревнование"
+    },
+    "organizer": {
+      "id": 1,
+      "login": "ivan",
+      "name": "Иван Анненков"
+    }
+  },
+  {
+    "Description": "Знакомство с лабораторией робототехники",
+    "Event_datetime": "2026-12-15 12:00",
+    "ID": 4,
+    "Location": "Лаборатория робототехники",
+    "Max_partipants": 15,
+    "Status": "planned",
+    "Title": "Экскурсия в лабораторию",
+    "event_type": {
+      "id": 4,
+      "name": "Экскурсия"
+    },
+    "organizer": {
+      "id": 5,
+      "login": "elena",
+      "name": "Елена Козлова"
+    }
+  }
+]

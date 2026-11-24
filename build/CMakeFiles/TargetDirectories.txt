@@ -1,3 +1,3 @@
-/home/annenkov/Рабочий стол/accounting-of-events/build/CMakeFiles/AccountingOfEvents.dir
-/home/annenkov/Рабочий стол/accounting-of-events/build/CMakeFiles/edit_cache.dir
-/home/annenkov/Рабочий стол/accounting-of-events/build/CMakeFiles/rebuild_cache.dir
+/home/annenkov/Projects/accounting-of-events/build/CMakeFiles/AccountingOfEvents.dir
+/home/annenkov/Projects/accounting-of-events/build/CMakeFiles/edit_cache.dir
+/home/annenkov/Projects/accounting-of-events/build/CMakeFiles/rebuild_cache.dir

@@ -1,17 +1,77 @@
-#include <iostream>
-#include <sqlite3.h>
-using namespace std; 
 
-int main() {
-       sqlite3* db = nullptr; 
-       int result = sqlite3_open("accounting-of-events.db", &db);       
-       cout << "Hello, world!" << endl;
-      if (result != SQLITE_OK) {
-       cout << "Ошибка подключения: " << sqlite3_errmsg(db) << endl; 
-       sqlite3_close(db); 
-       return 1; 
-       }
-       cout << "Подключение к базе успешно" << endl; 
-       sqlite3_close(db); 
-    return 0; 
+#include <iostream>
+#include <exception>
+
+#include "database/Database.h"
+
+#include "repositories/UserRepository.h"
+#include "repositories/EventRepository.h"
+#include "repositories/EventTypeRepository.h"
+#include "repositories/RegistrationRepository.h"
+
+#include "services/AuthenticationService.h"
+#include "services/RegistrationService.h"
+#include "services/EventService.h"
+
+#include "ui/ConsoleUI.h"
+
+#include "exporters/DataExporter.h" 
+
+int main()
+{
+    try
+    {
+        // Подключение к базе данных
+        Database database("accounting.db");
+
+	// Экспорт данных 
+	DataExporter dataExporter(database); 
+	dataExporter.exportEvents(); 
+
+        // Создание репозиториев
+        UserRepository userRepository(database);
+        EventRepository eventRepository(database);
+        EventTypeRepository eventTypeRepository(database);
+        RegistrationRepository registrationRepository(database);
+
+        // Создание сервисов
+        AuthenticationService authenticationService(userRepository);
+
+        RegistrationService registrationService(
+            database,
+            userRepository,
+            eventRepository,
+            registrationRepository
+        );
+
+        EventService eventService(
+            userRepository,
+            eventRepository,
+            eventTypeRepository,
+            registrationRepository
+        );
+
+        // Создание пользовательского интерфейса
+        ConsoleUI ui(
+            authenticationService,
+            registrationService,
+            eventService,
+            userRepository,
+            eventRepository,
+            registrationRepository
+        );
+
+        // Запуск приложения
+        ui.run();
+    }
+    catch (const std::exception& error)
+    {
+        std::cerr << "\nКритическая ошибка: "
+                  << error.what() << '\n';
+
+        return 1;
+    }
+
+    return 0;
 }
+

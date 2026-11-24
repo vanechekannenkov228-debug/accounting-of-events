@@ -12,6 +12,7 @@ AccountingOfEvents: \
   CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService.cpp.o \
   CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.o \
   CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.o \
+  CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.o \
   /usr/lib64/libsqlite3.so \
   /usr/lib64/libcrypto.so \
   /usr/lib/gcc/x86_64-redhat-linux/16/libstdc++.so \
@@ -75,6 +76,8 @@ CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/EventService
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/services/AuthenticationService.cpp.o:
 
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/ui/ConsoleUI.cpp.o:
+
+CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.o:
 
 /usr/lib64/libsqlite3.so:
 

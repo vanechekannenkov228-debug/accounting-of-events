@@ -1,7 +1,7 @@
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.o: \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/database/Database.cpp \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/database/Database.cpp \
  /usr/include/stdc-predef.h \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/database/Database.h \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/database/Database.h \
  /usr/include/sqlite3.h \
  /usr/lib/gcc/x86_64-redhat-linux/16/include/stdarg.h \
  /usr/include/c++/16/string /usr/include/c++/16/bits/requires_hosted.h \

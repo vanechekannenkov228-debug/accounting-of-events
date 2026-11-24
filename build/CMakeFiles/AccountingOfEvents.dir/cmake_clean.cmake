@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "AccountingOfEvents.pdb"
   "CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.o"
   "CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/database/Database.cpp.o.d"
+  "CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.o"
+  "CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/exporters/DataExporter.cpp.o.d"
   "CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.o"
   "CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.o.d"
   "CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/repositories/EventRepository.cpp.o"

@@ -1,5 +1,5 @@
 CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.o: \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/main.cpp \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/16/iostream \
  /usr/include/c++/16/bits/requires_hosted.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
@@ -139,23 +139,29 @@ CMakeFiles/AccountingOfEvents.dir/src/accounting-of-events/main.cpp.o: \
  /usr/include/c++/16/bits/ostream_print.h \
  /usr/include/c++/16/bits/ostream.tcc /usr/include/c++/16/istream \
  /usr/include/c++/16/bits/istream.tcc \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/database/Database.h \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/database/Database.h \
  /usr/include/sqlite3.h \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/repositories/UserRepository.h \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/models/User.h \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/UserRepository.h \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/models/User.h \
  /usr/include/c++/16/optional \
  /usr/include/c++/16/bits/enable_special_members.h \
  /usr/include/c++/16/vector /usr/include/c++/16/bits/stl_uninitialized.h \
  /usr/include/c++/16/bits/stl_vector.h \
  /usr/include/c++/16/bits/stl_bvector.h \
  /usr/include/c++/16/bits/vector.tcc \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/repositories/EventRepository.h \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/models/Event.h \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/repositories/EventTypeRepository.h \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/models/EventType.h \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/repositories/RegistrationRepository.h \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/models/Registration.h \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/services/AuthenticationService.h \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/services/RegistrationService.h \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/services/EventService.h \
- /home/annenkov/Рабочий\ стол/accounting-of-events/src/accounting-of-events/ui/ConsoleUI.h
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/EventRepository.h \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/models/Event.h \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/EventTypeRepository.h \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/models/EventType.h \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/repositories/RegistrationRepository.h \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/models/Registration.h \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/services/AuthenticationService.h \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/services/RegistrationService.h \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/services/EventService.h \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/ui/ConsoleUI.h \
+ /home/annenkov/Projects/accounting-of-events/src/accounting-of-events/exporters/DataExporter.h \
+ /usr/include/c++/16/map /usr/include/c++/16/bits/stl_tree.h \
+ /usr/include/c++/16/ext/aligned_buffer.h \
+ /usr/include/c++/16/bits/node_handle.h \
+ /usr/include/c++/16/bits/stl_map.h \
+ /usr/include/c++/16/bits/stl_multimap.h
