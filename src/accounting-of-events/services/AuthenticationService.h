@@ -10,13 +10,21 @@ class AuthenticationService
 public:
     explicit AuthenticationService(UserRepository& userRepository);
 
+    // Регистрация обычного пользователя
     int registerUser(
         const std::string& fullName,
         const std::string& login,
-        const std::string& password,
-        UserRole role
+        const std::string& password
     );
 
+    // Первоначальное создание администратора
+    int registerAdmin(
+        const std::string& fullName,
+        const std::string& login,
+        const std::string& password
+    );
+
+    // Авторизация
     User login(
         const std::string& login,
         const std::string& password

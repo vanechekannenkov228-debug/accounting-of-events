@@ -1,4 +1,3 @@
- 
 #pragma once
 
 #include <string>
@@ -6,7 +5,8 @@
 enum class UserRole
 {
     Student,
-    Organizer
+    Organizer,
+    Admin
 };
 
 struct User
@@ -17,4 +17,4 @@ struct User
     std::string passwordHash;
     UserRole role{UserRole::Student};
 };
-	
+

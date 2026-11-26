@@ -1,4 +1,3 @@
-
 #include "services/AuthenticationService.h"
 
 #include <openssl/evp.h>
@@ -193,14 +192,13 @@ bool AuthenticationService::verifyPassword(
     }
 }
 
+// Обычная регистрация: только студент.
 int AuthenticationService::registerUser(
     const std::string& fullName,
     const std::string& login,
-    const std::string& password,
-    UserRole role
+    const std::string& password
 )
 {
-    // Очищаем ФИО и логин от пробелов по краям.
     const std::string cleanFullName = trim(fullName);
     const std::string cleanLogin = trim(login);
 
@@ -213,9 +211,6 @@ int AuthenticationService::registerUser(
     if (password.size() < 8)
         throw std::runtime_error("Password must contain at least 8 characters");
 
-    if (role != UserRole::Student && role != UserRole::Organizer)
-        throw std::runtime_error("Invalid user role");
-
     if (userRepository_.findByLogin(cleanLogin))
         throw std::runtime_error("Login is already taken");
 
@@ -223,17 +218,60 @@ int AuthenticationService::registerUser(
     user.fullName = cleanFullName;
     user.login = cleanLogin;
     user.passwordHash = hashPassword(password);
-    user.role = role;
+    user.role = UserRole::Student;
 
     return userRepository_.create(user);
 }
 
+// Первоначальное создание администратора.
+int AuthenticationService::registerAdmin(
+    const std::string& fullName,
+    const std::string& login,
+    const std::string& password
+)
+{
+    const std::string cleanFullName = trim(fullName);
+    const std::string cleanLogin = trim(login);
+
+    if (cleanFullName.empty())
+        throw std::runtime_error("Full name cannot be empty");
+
+    if (cleanLogin.empty())
+        throw std::runtime_error("Login cannot be empty");
+
+    if (password.size() < 8)
+        throw std::runtime_error("Password must contain at least 8 characters");
+
+    if (userRepository_.findByLogin(cleanLogin))
+        throw std::runtime_error("Login is already taken");
+
+    const auto users = userRepository_.findAll();
+
+    for (const User& existingUser : users)
+    {
+        if (existingUser.role == UserRole::Admin)
+        {
+            throw std::runtime_error(
+                "Administrator already exists"
+            );
+        }
+    }
+
+    User user;
+    user.fullName = cleanFullName;
+    user.login = cleanLogin;
+    user.passwordHash = hashPassword(password);
+    user.role = UserRole::Admin;
+
+    return userRepository_.create(user);
+}
+
+// Авторизация.
 User AuthenticationService::login(
     const std::string& loginValue,
     const std::string& password
 )
 {
-    // При входе применяем ту же очистку логина.
     const std::string cleanLogin = trim(loginValue);
 
     if (cleanLogin.empty() || password.empty())

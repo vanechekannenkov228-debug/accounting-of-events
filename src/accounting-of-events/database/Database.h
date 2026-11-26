@@ -5,22 +5,23 @@
 #include <string>
 #include <stdexcept>
 
-class Database {
+class Database
+{
 public:
-    // Конструктор: открывает подключение к БД
+    // Открытие или создание базы данных
     explicit Database(const std::string& databasePath);
 
-    // Деструктор: закрывает подключение
+    // Закрытие подключения
     ~Database();
 
     // Запрет копирования объекта
     Database(const Database&) = delete;
     Database& operator=(const Database&) = delete;
 
-    // Выполнение SQL-команд без возврата результата
+    // Выполнение SQL-команд
     void execute(const std::string& sql);
 
-    // Получение указателя на соединение SQLite
+    // Получение подключения SQLite
     sqlite3* getConnection() const;
 
 private:
@@ -28,5 +29,7 @@ private:
 
     // Настройка подключения
     void configure();
-};
 
+    // Создание структуры базы данных
+    void initializeSchema();
+};

@@ -5,7 +5,7 @@ events:
     ID: 1
     Location: "Аудитория 301"
     Max_partipants: 30
-    Status: "planned"
+    Status: "completed"
     Title: "Основы C++"
     event_type:
       id: 1
@@ -20,7 +20,7 @@ events:
     ID: 2
     Location: "Компьютерный класс 204"
     Max_partipants: 20
-    Status: "planned"
+    Status: "completed"
     Title: "Практика SQL"
     event_type:
       id: 2
@@ -35,7 +35,7 @@ events:
     ID: 3
     Location: "Главный корпус"
     Max_partipants: 50
-    Status: "planned"
+    Status: "completed"
     Title: "Хакатон"
     event_type:
       id: 3
@@ -50,7 +50,7 @@ events:
     ID: 4
     Location: "Лаборатория робототехники"
     Max_partipants: 15
-    Status: "planned"
+    Status: "completed"
     Title: "Экскурсия в лабораторию"
     event_type:
       id: 4

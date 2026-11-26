@@ -15,8 +15,26 @@ EventService::EventService(
 {
 }
 
-int EventService::createEvent(const Event& event)
+// Проверка прав организатора
+void EventService::checkOrganizerAccess(const User& currentUser)
 {
+    auto user = userRepository_.findById(currentUser.id);
+
+    if (!user)
+        throw std::runtime_error("User not found");
+
+    if (user->role != UserRole::Organizer)
+        throw std::runtime_error("Access denied: organizer role required");
+}
+
+// Создание мероприятия
+int EventService::createEvent(const User& currentUser, const Event& event)
+{
+    checkOrganizerAccess(currentUser);
+
+    if (event.organizerId != currentUser.id)
+        throw std::runtime_error("You can create events only for yourself");
+
     if (event.title.empty())
         throw std::runtime_error("Event title cannot be empty");
 
@@ -32,14 +50,6 @@ int EventService::createEvent(const Event& event)
     if (event.maxParticipants <= 0)
         throw std::runtime_error("Maximum participants must be greater than zero");
 
-    auto organizer = userRepository_.findById(event.organizerId);
-
-    if (!organizer)
-        throw std::runtime_error("Organizer not found");
-
-    if (organizer->role != UserRole::Organizer)
-        throw std::runtime_error("Only organizers can create events");
-
     auto eventType = eventTypeRepository_.findById(event.eventTypeId);
 
     if (!eventType)
@@ -52,12 +62,18 @@ int EventService::createEvent(const Event& event)
     return eventRepository_.create(newEvent);
 }
 
-void EventService::updateEvent(const Event& event)
+// Обновление мероприятия
+void EventService::updateEvent(const User& currentUser, const Event& event)
 {
+    checkOrganizerAccess(currentUser);
+
     auto existingEvent = eventRepository_.findById(event.id);
 
     if (!existingEvent)
         throw std::runtime_error("Event not found");
+
+    if (existingEvent->organizerId != currentUser.id)
+        throw std::runtime_error("You can modify only your own events");
 
     if (event.title.empty())
         throw std::runtime_error("Event title cannot be empty");
@@ -88,18 +104,12 @@ void EventService::updateEvent(const Event& event)
         }
 
         if (event.maxParticipants < activeRegistrations)
+        {
             throw std::runtime_error(
                 "Maximum participants cannot be less than active registrations"
             );
+        }
     }
-
-    auto organizer = userRepository_.findById(event.organizerId);
-
-    if (!organizer)
-        throw std::runtime_error("Organizer not found");
-
-    if (organizer->role != UserRole::Organizer)
-        throw std::runtime_error("Event owner must have organizer role");
 
     if (event.organizerId != existingEvent->organizerId)
         throw std::runtime_error("Changing event organizer is not allowed");
@@ -115,12 +125,18 @@ void EventService::updateEvent(const Event& event)
     eventRepository_.update(updatedEvent);
 }
 
-void EventService::completeEvent(int eventId)
+// Завершение мероприятия
+void EventService::completeEvent(const User& currentUser, int eventId)
 {
+    checkOrganizerAccess(currentUser);
+
     auto event = eventRepository_.findById(eventId);
 
     if (!event)
         throw std::runtime_error("Event not found");
+
+    if (event->organizerId != currentUser.id)
+        throw std::runtime_error("You can modify only your own events");
 
     if (event->status != EventStatus::Planned)
         throw std::runtime_error("Only planned events can be completed");
@@ -130,12 +146,18 @@ void EventService::completeEvent(int eventId)
     eventRepository_.update(*event);
 }
 
-void EventService::cancelEvent(int eventId)
+// Отмена мероприятия
+void EventService::cancelEvent(const User& currentUser, int eventId)
 {
+    checkOrganizerAccess(currentUser);
+
     auto event = eventRepository_.findById(eventId);
 
     if (!event)
         throw std::runtime_error("Event not found");
+
+    if (event->organizerId != currentUser.id)
+        throw std::runtime_error("You can modify only your own events");
 
     if (event->status != EventStatus::Planned)
         throw std::runtime_error("Only planned events can be cancelled");
@@ -145,12 +167,18 @@ void EventService::cancelEvent(int eventId)
     eventRepository_.update(*event);
 }
 
-void EventService::deleteEvent(int eventId)
+// Удаление мероприятия
+void EventService::deleteEvent(const User& currentUser, int eventId)
 {
+    checkOrganizerAccess(currentUser);
+
     auto event = eventRepository_.findById(eventId);
 
     if (!event)
         throw std::runtime_error("Event not found");
+
+    if (event->organizerId != currentUser.id)
+        throw std::runtime_error("You can delete only your own events");
 
     auto registrations =
         registrationRepository_.findByEventId(eventId);
@@ -164,3 +192,4 @@ void EventService::deleteEvent(int eventId)
 
     eventRepository_.remove(eventId);
 }
+

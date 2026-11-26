@@ -1,6 +1,9 @@
-
 #include <iostream>
 #include <exception>
+
+#ifdef _WIN32
+#include <windows.h>
+#endif
 
 #include "database/Database.h"
 
@@ -15,18 +18,23 @@
 
 #include "ui/ConsoleUI.h"
 
-#include "exporters/DataExporter.h" 
+#include "exporters/DataExporter.h"
 
 int main()
 {
+#ifdef _WIN32
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+#endif
+
     try
     {
-        // Подключение к базе данных
-        Database database("accounting.db");
+        // Подключение к постоянной базе данных проекта
+        Database database(ACCOUNTING_DATABASE_PATH);
 
-	// Экспорт данных 
-	DataExporter dataExporter(database); 
-	dataExporter.exportEvents(); 
+        // Экспорт данных
+        DataExporter dataExporter(database);
+        dataExporter.exportEvents();
 
         // Создание репозиториев
         UserRepository userRepository(database);

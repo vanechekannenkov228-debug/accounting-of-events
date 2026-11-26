@@ -32,9 +32,13 @@ target_link_libraries(AccountingOfEvents PRIVATE
     OpenSSL::Crypto
 )
 
-configure_file(
-    "${CMAKE_SOURCE_DIR}/src/accounting-of-events/accounting.db"
-    "${CMAKE_BINARY_DIR}/accounting.db"
-    COPYONLY
+# Путь к базе данных 
+set(ACCOUNTING_DATABASE_PATH
+    "${CMAKE_SOURCE_DIR}/database/accounting.db"
+    CACHE FILEPATH "Path to SQLite database"
+)
+
+target_compile_definitions(AccountingOfEvents PRIVATE
+    ACCOUNTING_DATABASE_PATH="${ACCOUNTING_DATABASE_PATH}"
 )
 

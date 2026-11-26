@@ -6,7 +6,7 @@
 <ID>1</ID>
 <Location>Аудитория 301</Location>
 <Max_partipants>30</Max_partipants>
-<Status>planned</Status>
+<Status>completed</Status>
 <Title>Основы C++</Title>
 <event_type>
 <id>1</id>
@@ -24,7 +24,7 @@
 <ID>2</ID>
 <Location>Компьютерный класс 204</Location>
 <Max_partipants>20</Max_partipants>
-<Status>planned</Status>
+<Status>completed</Status>
 <Title>Практика SQL</Title>
 <event_type>
 <id>2</id>
@@ -42,7 +42,7 @@
 <ID>3</ID>
 <Location>Главный корпус</Location>
 <Max_partipants>50</Max_partipants>
-<Status>planned</Status>
+<Status>completed</Status>
 <Title>Хакатон</Title>
 <event_type>
 <id>3</id>
@@ -60,7 +60,7 @@
 <ID>4</ID>
 <Location>Лаборатория робототехники</Location>
 <Max_partipants>15</Max_partipants>
-<Status>planned</Status>
+<Status>completed</Status>
 <Title>Экскурсия в лабораторию</Title>
 <event_type>
 <id>4</id>

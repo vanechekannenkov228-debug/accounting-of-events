@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//Path to SQLite database
+ACCOUNTING_DATABASE_PATH:FILEPATH=/home/annenkov/Projects/accounting-of-events/database/accounting.db
+
 //Value Computed by CMake
 AccountingOfEvents_BINARY_DIR:STATIC=/home/annenkov/Projects/accounting-of-events/build
 
@@ -417,7 +420,7 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding OpenSSL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/usr/lib64/libcrypto.so][/usr/include][ ][v4.0.3()]
 //Details about finding SQLite3
-FIND_PACKAGE_MESSAGE_DETAILS_SQLite3:INTERNAL=[/usr/lib64/libsqlite3.so][/usr/include][v3.53.4()]
+FIND_PACKAGE_MESSAGE_DETAILS_SQLite3:INTERNAL=[/usr/lib64/libsqlite3.so][/usr/include][v3.54.1()]
 //ADVANCED property for variable: OPENSSL_CRYPTO_LIBRARY
 OPENSSL_CRYPTO_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENSSL_INCLUDE_DIR
@@ -454,7 +457,7 @@ PC_SQLite3_STATIC_LIBS:INTERNAL=
 PC_SQLite3_STATIC_LIBS_L:INTERNAL=
 PC_SQLite3_STATIC_LIBS_OTHER:INTERNAL=
 PC_SQLite3_STATIC_LIBS_PATHS:INTERNAL=
-PC_SQLite3_VERSION:INTERNAL=3.53.4
+PC_SQLite3_VERSION:INTERNAL=3.54.1
 PC_SQLite3_sqlite3_INCLUDEDIR:INTERNAL=
 PC_SQLite3_sqlite3_LIBDIR:INTERNAL=
 PC_SQLite3_sqlite3_PREFIX:INTERNAL=

@@ -1,4 +1,3 @@
-
 #include "repositories/UserRepository.h"
 #include "database/Statement.h"
 
@@ -17,6 +16,9 @@ namespace
 
             case UserRole::Organizer:
                 return "Organizer";
+
+            case UserRole::Admin:
+                return "Admin";
         }
 
         throw std::runtime_error("Unknown user role");
@@ -32,6 +34,11 @@ namespace
         if (role == "Organizer")
         {
             return UserRole::Organizer;
+        }
+
+        if (role == "Admin")
+        {
+            return UserRole::Admin;
         }
 
         throw std::runtime_error(
@@ -167,20 +174,48 @@ void UserRepository::update(const User& user)
 }
 
 // Удаление пользователя
+
 void UserRepository::remove(int userId)
 {
-    const std::string sql =
-        "DELETE FROM User WHERE id = ?;";
+    // Начинаем транзакцию.
+    database_.execute("BEGIN IMMEDIATE;");
 
-    Statement statement(database_, sql);
-
-    statement.bindInt(1, userId);
-
-    statement.execute();
-
-    if (statement.changes() == 0)
+    try
     {
-        throw std::runtime_error("User not found");
+        // Удаляем регистрации пользователя.
+        {
+            const std::string sql =
+                "DELETE FROM Registration WHERE Student_ID = ?;";
+
+            Statement statement(database_, sql);
+            statement.bindInt(1, userId);
+            statement.execute();
+        }
+
+        // Удаляем самого пользователя.
+        {
+            const std::string sql =
+                "DELETE FROM User WHERE ID = ?;";
+
+            Statement statement(database_, sql);
+            statement.bindInt(1, userId);
+            statement.execute();
+
+            if (statement.changes() == 0)
+            {
+                throw std::runtime_error("User not found");
+            }
+        }
+
+        // Подтверждаем изменения.
+        database_.execute("COMMIT;");
+    }
+    catch (...)
+    {
+        database_.execute("ROLLBACK;");
+        throw;
     }
 }
+
+
 
